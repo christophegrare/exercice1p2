@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" onMouseOver="modifSRC(this, 'images/image1_2.jpg');" onMouseOut="modifSRC(this, 'images/image1.jpg');"id="image1" />
+  </body>
+  <script>
+    //Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.
+    /* dans le html j'ai mis onMouseOver pour changer dela 1ere a la 2eme et
+    un onMouseOut pour reprendre la 1er image*/
+    function modifSRC(image, new_src){
+      image.setAttribute('src', new_src);
+    }
+  </script>
+</html>
